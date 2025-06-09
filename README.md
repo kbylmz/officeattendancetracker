@@ -54,22 +54,24 @@ The system includes:
 
 ## 📂 Project Structure
 
+```
 office-attendance-tracker/
-├── backend/ # ASP.NET Core Web API
-│ ├── Controllers/
-│ ├── Services/
-│ ├── Models/
-│ ├── Data/
-│ └── appsettings.json
-│
-├── frontend/ # Angular App
-│ ├── src/app/
-│ │ ├── login/
-│ │ ├── calendar/
-│ │ └── services/
-│ └── angular.json
-│
-└── README.md
+├── backend/                  # ASP.NET Core Web API
+│   ├── Controllers/          # API Controllers (Login, Attendance)
+│   ├── Services/             # Business logic and LDAP handling
+│   ├── Models/               # Data models (User, Attendance, etc.)
+│   ├── Data/                 # EF Core DbContext and migrations
+│   └── appsettings.json      # App configuration (LDAP, DB, etc.)
+
+├── frontend/                 # Angular Application
+│   ├── src/app/
+│   │   ├── login/            # Login component
+│   │   ├── calendar/         # Calendar component for day selection
+│   │   └── services/         # Angular services (auth, attendance)
+│   └── angular.json          # Angular CLI configuration
+
+└── README.md                 # Project documentation
+```
 
 ---
 
